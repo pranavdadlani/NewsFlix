@@ -1,0 +1,33 @@
+{
+  "name": "newsflix",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pranavdadlani/NewsFlix.git"
+  },
+  "author": "Pranav Daddy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pranavdadlani/NewsFlix/issues"
+  },
+  "homepage": "https://github.com/pranavdadlani/NewsFlix#readme",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "cookie-parser": "^1.4.0",
+    "cors": "^2.7.1",
+    "express": "^4.13.3",
+    "http": "0.0.0",
+    "jade": "^1.11.0",
+    "jquery": "^2.1.4",
+    "jquery-deferred": "^0.3.0",
+    "mongodb": "^2.0.47",
+    "nodemon": "^1.8.0",
+    "request": "^2.65.0",
+    "underscore": "^1.8.3"
+  }
+}

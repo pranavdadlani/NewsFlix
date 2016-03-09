@@ -1,0 +1,28 @@
+doctype html
+html(lang="en")
+    head
+        link(type='text/css', rel='stylesheet' ,href='css/style.css')
+        script(src='js/jquery.min.js')
+        script(src='js/underscore.min.js')
+        script(src='js/client.js')
+        link(rel="stylesheet", type = 'text/css', href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css")
+        link(rel="stylesheet", type = 'text/css' ,href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css")
+        include ./nav.html
+
+body
+    div.story-container
+        each story in data
+            a(href='#{story.url}', target='_blank')
+                div.story(data-section='#{story.section}')
+                    if ( story.thumbnail_standard == '' )
+                        img.story-img(src='images/static.jpg', data-section='#{story.section}')
+                    else
+                        img.story-img(src='#{story.thumbnail_standard}', data-section='#{story.section}')
+                    div.title-desc(data-section='#{story.section}')
+                        p.story-title(data-section='#{story.section}') #{story.title}
+                        p.story-abstract(data-section='#{story.section}') #{story.abstract}
+                    div.extras
+                        span.section-badge.badge(data-section='#{story.section}') #{story.section}
+                        image.trash-icon(src='images/trash.png')
+
+    input.loadMore.btn.btn-lg.btn-info(value='Load more..')

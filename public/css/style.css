@@ -1,0 +1,172 @@
+/* Registration page */
+
+
+/* Space out content a bit */
+.background-image {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/images/eiffel.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+  opacity: 0.8;
+  filter:alpha(opacity=80);
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  padding-bottom: 19px;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+.container {
+  width: 450px;
+}
+
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+.jumbotron .btn {
+  padding: 14px 24px;
+  font-size: 21px;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
+
+/* Myfeed page */
+.story {
+    height: 100px;
+    background-color: #EAEAEA;
+    margin: 10px;
+}
+
+.story-container {
+  margin-top: 43px;
+}
+
+.story-img {
+  margin-top: 1%;
+}
+
+.title-desc {
+    margin-left: 10px;
+    display: inline-block;
+    position: absolute;
+    margin-top: 15px;
+    width: 85%;
+}
+
+.story-title {
+  font-weight: bold;
+  font-size: 120%;
+}
+
+.story p {
+  color: #333333;  
+}
+
+.loadMore {
+  margin-left: 40%;
+}
+
+.section-badge {
+    float: right;
+    margin: 10px;
+}
+
+.extras {
+    float: right;
+    height: 100%;
+}
+
+.trash-icon {
+    height: 28px;
+    width: 28px;
+    position: relative;
+    top: 50px;
+    right: -50px
+ }
+
+/* Home page */
+.welcome-div {
+  position: absolute;
+    height: 200px;
+    width: 100%;
+    margin-top: 125px;
+    text-align: center;
+}
+
+.search-div {
+    width: 20%;
+    left: 40%;
+    margin-top: 50px;
+}
+
+.welcome-div button {
+    background-image: url('/images/search.png');
+    height: 34px;
+    width: 26px;
+    background-repeat: no-repeat
+}
+
+.welcome-div input {
+    border-right: none;
+}
